@@ -25,8 +25,8 @@ for weight in "${weights[@]}"; do
 
 	fontmake -g "${glyphs_file}" -o ttf --output-path "${file}" -i ".* ${weight}"
 
-	echo "  [i] Fixing DSIG in ${file}"
-	gftools fix-dsig --autofix "${file}"
+	#echo "  [i] Fixing DSIG in ${file}"
+	#gftools fix-dsig --autofix "${file}"
 
 	echo "  [i] TTFautohint ${file}"
 	ttfautohint --no-info --ignore-restrictions "${file}" "${file}.hinted"
