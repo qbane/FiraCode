@@ -53,6 +53,7 @@ def output(out):
             print(f'unicode = {x:>04};', end='')
         else:
             print(line.replace('\\n', '\\012'), end='')
+    print()
 
 
 def main(data):

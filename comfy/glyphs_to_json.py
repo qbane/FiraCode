@@ -64,11 +64,11 @@ def main(data):
         for kl in data['classes']:
             _, d = detect_delim(kl['code'])
             assert d is not None
-            gs = list(filter(lambda x: x in expglys, kl['code'].split(d)))
+            gs = list(filter(lambda x: x.startswith('@') or x in expglys, kl['code'].split(d)))
             kl['code'] = d.join(gs)
 
     # delete some data for easier diffing
-    if 1:
+    if 0:
         for d in data['glyphs']:
             # if d.get('export') == 0:
             #     # print(d['glyphname'])

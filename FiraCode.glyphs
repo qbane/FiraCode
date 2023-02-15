@@ -35,7 +35,7 @@ code = "a b c d e f A B C D E F";
 name = HexDigit;
 },
 {
-code = "zero one two twoTurned threeTurned three four five six seven eight nine bar";
+code = "@Uppercase zero one two twoTurned threeTurned three four five six seven eight nine @OpeningBracket @ClosingBracket bar";
 name = Tall;
 },
 {
