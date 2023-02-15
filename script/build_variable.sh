@@ -3,11 +3,11 @@ set -o errexit -o nounset -o pipefail
 cd "$(dirname "$0")/.."
 [ -d venv ] && source venv/bin/activate
 
-family_name=${FIRACODE_FAMILY_NAME:-"Fira Code"}
+family_name=${FIRACODE_FAMILY_NAME:-"Fira Code NL"}
 glyphs_file=${FIRACODE_GLYPHS_FILE:-"FiraCode.glyphs"}
 
 dir="distr/variable_ttf/${family_name}"
-file="${dir}/FiraCode-VF.ttf"
+file="${dir}/FiraCodeNL-VF.ttf"
 
 echo "=============="
 echo

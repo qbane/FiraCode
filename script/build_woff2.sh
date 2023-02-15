@@ -3,7 +3,7 @@ set -o errexit -o nounset -o pipefail
 cd "$(dirname "$0")/.."
 [ -d venv ] && source venv/bin/activate
 
-family_name=${FIRACODE_FAMILY_NAME:-"Fira Code"}
+family_name=${FIRACODE_FAMILY_NAME:-"Fira Code NL"}
 
 ttf_dir="distr/ttf/${family_name}"
 woff_dir="distr/woff2/${family_name}"
@@ -24,4 +24,4 @@ for ttf in "${ttf_dir}/"*.ttf; do
 done
 
 mv "${ttf_dir}/"*.woff2 "${woff_dir}"
-rm -f "${woff_dir}/FiraCode-Retina.woff2"
+rm -f "${woff_dir}/FiraCodeNL-Retina.woff2"

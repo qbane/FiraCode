@@ -6,7 +6,7 @@ features=()
 weights=()
 gen_glyphs_file_only=0
 use_features_for_family_name=0
-export FIRACODE_FAMILY_NAME="Fira Code"
+export FIRACODE_FAMILY_NAME="Fira Code NL"
 
 ########### Parsing inputs ########### {{{
 check_required_args()

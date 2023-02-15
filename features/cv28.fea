@@ -1,4 +1,0 @@
-# {. .} as ligature
-
-sub braceleft period' by bullet;
-sub period' braceright by bullet;

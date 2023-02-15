@@ -3,7 +3,7 @@ set -o errexit -o nounset -o pipefail
 cd "$(dirname "$0")/.."
 [ -d venv ] && source venv/bin/activate
 
-family_name=${FIRACODE_FAMILY_NAME:-"Fira Code"}
+family_name=${FIRACODE_FAMILY_NAME:-"Fira Code NL"}
 glyphs_file=${FIRACODE_GLYPHS_FILE:-"FiraCode.glyphs"}
 
 dir="distr/ttf/${family_name}"
@@ -16,7 +16,7 @@ default_weights=( "Light" "Regular" "Retina" "Medium" "SemiBold" "Bold" )
 weights=( "${args[@]:-"${default_weights[@]}"}" )
 
 for weight in "${weights[@]}"; do
-	file="${dir}/FiraCode-${weight}.ttf"
+	file="${dir}/FiraCodeNL-${weight}.ttf"
 
 	echo "=============="
 	echo

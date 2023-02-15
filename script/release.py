@@ -37,7 +37,7 @@ def github_release(version):
 
   data = '{"tag_name":"' + version + '","name":"' + version + '"}'
   headers = github_headers()
-  resp = urllib.request.urlopen(urllib.request.Request('https://api.github.com/repos/tonsky/FiraCode/releases', data=data.encode('utf-8'), headers=headers)).read()
+  resp = urllib.request.urlopen(urllib.request.Request('https://api.github.com/repos/qbane/FiraCode/releases', data=data.encode('utf-8'), headers=headers)).read()
   upload_url = re.match('https://.*/assets', json.loads(resp.decode('utf-8'))['upload_url']).group(0)
 
   print('github_release: Uploading', zip, 'to', upload_url)
